@@ -1,0 +1,345 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-color-text: #757575;
+  --second-color-text: #212121;
+  --bg-color-text: #fff;
+  --accent-color-text: #2196f3;
+  --logo-color-head: #000;
+  --dark-bgc: #2f303a;
+  --light-bgc: #f5f4fa;
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --color-btn: #212121;
+  --border-example: #eeeeee;
+  --border-header: #ececec;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  /* margin-bottom: 0; */
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* header */
+.part-of-logo {
+  color: var(--accent-color-text);
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-color-head);
+  text-decoration: none;
+}
+
+header > .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo {
+  margin-right: 93px;
+}
+
+.site-nav {
+  display: flex;
+}
+.site-nav > li:not(:first-child),
+.contacts > li:not(:first-child) {
+  margin-left: 50px;
+}
+nav {
+  display: inline-flex;
+  align-items: center;
+}
+.contacts {
+  display: inline-flex;
+}
+
+.link-our {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--second-color-text);
+}
+
+.contacts .link {
+  color: var(--main-color-text);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color-text);
+}
+
+.site-nav .current {
+  color: var(--accent-color-text);
+}
+header {
+  border-bottom: 1px solid var(--border-header);
+}
+/* Студия */
+/* main */
+/* hero */
+.hero {
+  background-color: var(--dark-bgc);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-color-text);
+
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  min-width: 200px;
+  min-height: 50px;
+  border: transparent;
+  border-radius: 4px;
+
+  letter-spacing: 0.06em;
+  color: var(--bg-color-text);
+  background-color: var(--accent-color-text);
+  cursor: pointer;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--second-color-text);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages .list {
+  display: flex;
+  margin-left: -30px;
+}
+
+/* Преимущества */
+.advantages li {
+  margin-left: 30px;
+  flex-basis: calc((100%-90px) / 3);
+}
+.advantages p {
+  margin-bottom: 7px;
+}
+.list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-color-text);
+
+  margin-bottom: 10px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Чем занимаемся */
+.work .list {
+  display: flex;
+  margin-left: -30px;
+}
+.work li {
+  margin-left: 30px;
+  flex-basis: calc((100%-90px) / 3);
+}
+.work {
+  margin-bottom: 94px;
+}
+/* Команда */
+.team {
+  background-color: var(--light-bgc);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team .section-title {
+  margin-bottom: 50px;
+}
+.team li {
+  margin-left: 30px;
+  flex-basis: calc((100%-90px) / 3);
+  box-shadow: var(--box-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
+  text-transform: none;
+}
+.team .list {
+  display: flex;
+  margin-left: -30px;
+  text-align: center;
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team img {
+  margin-bottom: 30px;
+}
+.team p {
+  margin-bottom: 30px;
+}
+
+/* Портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--color-btn);
+  background-color: var(--light-bgc);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--bg-color-text);
+  background-color: var(--accent-color-text);
+  cursor: pointer;
+}
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.example li {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid var(--border-example);
+}
+.card-text {
+  padding: 20px 24px;
+}
+.example-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-color-text);
+  margin-bottom: 4px;
+}
+.example-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-color-text);
+  margin-bottom: 0;
+}
+/* footer */
+.dark-bg {
+  background-color: var(--dark-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.dark-bg .logo {
+  color: var(--bg-color-text);
+  display: flex;
+  margin-bottom: 20px;
+}
+.dark-bg .list {
+  display: flex;
+  flex-direction: column;
+}
+.connection .link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.connection li {
+  margin-bottom: 9px;
+}
+.link-map {
+  color: var(--bg-color-text);
+}
+.mail,
+.tell {
+  color: rgba(255, 255, 255, 0.6);
+}
