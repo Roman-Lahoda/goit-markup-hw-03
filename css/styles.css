@@ -106,6 +106,8 @@ nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link {
   color: var(--second-color-text);
@@ -175,23 +177,21 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.advantages .list {
-  display: flex;
-  margin-left: -30px;
-}
 
 /* Преимущества */
 .advantages li {
   margin-left: 30px;
   flex-basis: calc((100%-90px) / 3);
 }
-.advantages p {
-  margin-bottom: 7px;
+.advantages .list {
+  display: flex;
+  margin-left: -30px;
 }
+
 .list-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   text-transform: uppercase;
   color: var(--second-color-text);
 
@@ -218,7 +218,10 @@ header {
   flex-basis: calc((100%-90px) / 3);
 }
 .work {
-  margin-bottom: 94px;
+  padding-top: 0;
+}
+.work .section-title {
+  margin-bottom: 50px;
 }
 /* Команда */
 .team {
@@ -250,24 +253,33 @@ header {
 .position {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 0;
 }
-.team img {
+.team-card-text {
+  padding: 30px 59px 30px 60px;
+}
+/* .team img {
   margin-bottom: 30px;
 }
 .team p {
   margin-bottom: 30px;
-}
+} */
 
 /* Портфолио */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.filter > li:not(:first-child) {
+  margin-left: 8px;
 }
+
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
@@ -276,7 +288,6 @@ header {
   background-color: var(--light-bgc);
   border: 1px solid transparent;
   border-radius: 4px;
-  margin-left: 8px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -294,10 +305,12 @@ header {
   margin-left: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid var(--border-example);
 }
 .card-text {
   padding: 20px 24px;
+  border-right: 1px solid var(--border-example);
+  border-bottom: 1px solid var(--border-example);
+  border-left: 1px solid var(--border-example);
 }
 .example-title {
   font-size: 18px;
